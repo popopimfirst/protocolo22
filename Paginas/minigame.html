@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Coat</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        html{
+            color: white;
+            background:rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 300px;
+        }
+        #title{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <Page>
+        <greetings id="title">
+        Error
+        </greetings>
+    </Page>
+    <script>
+        //A comment line.
+        /*More than one
+        comment line*/  
+        var Daniel='Daniel' 
+        var name=window.prompt('Type your name')     
+        alert('This page has been created by Alexandre Marcus Hott Corrêa')
+        if (name.toLowerCase()=="daniel"){
+            window.location.href="Daniel.html"
+        }else if (name.toLowerCase()=="kaligolas"){
+            window.location.href="Kaligolas.html"
+        }else if (name.toLowerCase()=="gabriel"){
+            window.location.href="Gabriel.html" 
+        }else{
+            window.document.querySelector('#title').innerText="There is nothing to do here if your name is not 𝗗𝗔𝗡𝗜𝗘𝗟"   
+        }
+    </script>
+</body>
+</html>

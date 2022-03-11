@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome back, Daniel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body{
+            background:black;
+            color:white;
+            text-align: center;
+            margin-top: 300px;
+        }
+        #yes{
+            background: green;
+            border: none;
+            height: 40px;
+            width: 80px;
+            font-size: 30px;
+        }
+        
+        #no{
+            background:red;
+            border: none;
+            height: 40px;
+            width: 80px;
+            font-size: 30px;
+        }
+        #yes:hover{
+            background:red
+        }
+        #question{
+            font-size: 30px;
+            top:0;
+        }
+        #next_name{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <html id="html">
+        <question id="question">
+            Are you sure about your name?
+        </question>
+        <p>
+        <buttons id="buttons" onclick="loc()">
+            <button id="yes" onmouseenter="enter()" onmouseout="out()">YES</button>
+            <button id="no">NO</button>
+        </buttons>
+        </p>
+        <p>
+        <next_name id="next_name">
+            You never know, your name could be Kaligolas.
+        </next_name>
+        </p>
+    </html>
+    <script>
+        function out(){
+            window.document.querySelector('#yes').innerText='YES'
+        }
+        function enter(){
+            window.document.querySelector('#yes').innerText='NO'
+        }
+        function loc(){
+            window.location.href="minigame.html";
+        }
+    </script>
+</body>
+</html>
